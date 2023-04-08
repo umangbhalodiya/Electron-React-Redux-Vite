@@ -1,0 +1,75 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo-box {
+  display: flex;
+  justify-content: center;
+  border-radius: 200px;
+  a {
+    img {
+      height: 200px;
+      border-radius: 10%;
+      will-change: filter;
+      transition: filter 300ms;
+      &:hover {
+        filter: drop-shadow(0 0 2em #646cffaa);
+      }
+    }
+  }
+}
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.card {
+  padding: 2em;
+  .box-input {
+    margin: 10px 0;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    label {
+      font-size: 17px;
+      font-weight: 500;
+      font-family: inherit;
+      margin-bottom: 3px;
+    }
+    input {
+      border: 1px solid #d3d3d3;
+      padding: 10px;
+      border-radius: 5px;
+      outline: none;
+    }
+  }
+  .text {
+    font-weight: 500;
+    font-family: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    font-size: 23px;
+    span {
+      color: #00a2ff;
+    }
+  }
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
